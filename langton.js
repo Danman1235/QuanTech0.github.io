@@ -33,14 +33,14 @@ function drawGrid()
   {
     ctx.beginPath();
     ctx.moveTo(i*20,0);
-    ctx.moveTo(i*20,400);
+    ctx.lineTo(i*20,400);
     ctx.stroke();
   }
   for(i=0;i<20;i++)
   {
     ctx.beginPath();
     ctx.moveTo(0,i*20);
-    ctx.moveTo(400,i*20);
+    ctx.lineTo(400,i*20);
     ctx.stroke();
   }
 }
