@@ -86,3 +86,4 @@ function stop()
 
 c.addEventListener('click', userDraw, false);
 
+//My name is Ussr
