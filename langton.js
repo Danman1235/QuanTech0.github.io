@@ -44,3 +44,15 @@ function drawGrid()
     ctx.stroke();
   }
 }
+
+function userDraw(e)
+{
+  var x = Math.floor((e.clientX - c.offsetLeft) / 20);
+  var y = Math.floor((e.clientY - c.offsetTop) / 20);
+  
+  ctx.fillStyle = "#000000";
+  ctx.fillRect(x*20, y*20, 20, 20);
+}
+
+c.addEventListener('click', userDraw, false);
+
